@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+
+            <TextView
+                android:id="@+id/obligatory2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#CBCBCB"
+                android:text="1)\nObavezni\npodaci"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#CBCBCB"
+                android:text="2)\nProfilna\nslika"
+                android:textColor="#004400"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/optional2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#CBCBCB"
+                android:text="3)\nNeobavezni\npodaci"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/end2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:background="#CBCBCB"
+                android:text="4)\nKraj\nregistracije"
+                android:textSize="16dp"
+                android:clickable="true" />
+
+        </GridLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/chooseprofilePictureButton"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="Odaberi sliku profila"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/choose_picture_button"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/registerProfilePictureImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

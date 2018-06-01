@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:background="#bfbdbd">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:text="1)\nObavezni\npodaci"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:text="2)\nNeobavezni\npodaci"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:text="3)\nPonudi\nputovanje"
+            android:textSize="16dp"
+            android:textColor="#004400"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            android:textStyle="italic|bold"
+            android:text="Uspješno ste dovršili postupak ponude putovanja!"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/finalizeJourneyOffer"
+            android:layout_marginTop="50dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Ponudi putovanje"
+            android:background="@drawable/end_finalize"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/quitJourneyOffer"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Odustani"
+            android:background="@drawable/end_quit"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

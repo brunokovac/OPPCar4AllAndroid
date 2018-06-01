@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#d6f6f7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Korisnik:"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/requestForOfferedJourneyItemUserProfilePicture"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/requestForOfferedJourneyItemUserUsernameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Polazna točka:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/requestForOfferedJourneyItemStartingPointField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Odredište:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/requestForOfferedJourneyItemDestinationField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Datum i vrijeme:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/requestForOfferedJourneyItemStartingDateTimeField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/requestForOfferedJourneyItemDeclineButton"
+            android:text="Odbij"
+            android:background="#f2cdcd"
+            android:textAlignment="center"
+            android:layout_columnWeight="1"
+            android:gravity="fill"/>
+
+        <Button
+            android:id="@+id/requestForOfferedJourneyItemAcceptButton"
+            android:text="Prihvati"
+            android:background="#c6edbe"
+            android:textAlignment="center"
+            android:layout_columnWeight="1"
+            android:gravity="fill"/>
+
+    </GridLayout>
+
+</LinearLayout>

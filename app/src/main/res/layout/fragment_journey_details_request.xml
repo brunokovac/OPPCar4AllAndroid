@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/journeyDetailsSendRequestButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_save_changes_button"
+                android:textColor="@android:color/white"
+                android:text="Pošalji zahtjev"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Polazna točka:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsStartingPointField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Odredište:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsDestinationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Datum i vrijeme polaska:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsStartingDateTimeField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsReturnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Datum i vrijeme povratka:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsReturnDateTimeField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Stajališta:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsPassingPlacesField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/journeyDetailsNumberOfSeatsField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Broj slobodnih mjesta: "
+                android:textStyle="italic|bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/journeyDetailsHighwayField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Autocesta: "
+                android:textStyle="italic|bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/journeyDetailsPriceField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Cijena: "
+                android:textStyle="italic|bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Komentar:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/journeyDetailsCommentField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Vozač:"
+                android:textStyle="italic|bold"
+                android:textSize="17dp" />
+            
+            <LinearLayout
+                android:id="@+id/journeyDetailsDriverInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                
+                <ImageView
+                    android:id="@+id/journeyDetailsDriverPicture"
+                    android:layout_width="45dp"
+                    android:layout_height="70dp"/>
+
+                <TextView
+                    android:id="@+id/journeyDetailsDriverUsernameField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/journeyDetailsChatTitle"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="RAZGOVOR"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/journeyDetailsChatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/next_icon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

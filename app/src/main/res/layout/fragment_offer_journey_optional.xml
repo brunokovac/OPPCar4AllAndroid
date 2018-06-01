@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:background="#bfbdbd">
+
+            <TextView
+                android:id="@+id/offerJourneyObligatory2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:text="1)\nObavezni\npodaci"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:text="2)\nNeobavezni\npodaci"
+                android:textColor="#004400"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/offerJourneyEnd2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                android:text="3)\nPonudi\nputovanje"
+                android:textSize="16dp" />
+
+        </GridLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <Switch
+                    android:id="@+id/roundTripSwitch"
+                    android:text="Povratni put:     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="19dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@android:color/tab_indicator_text"/>
+
+                <LinearLayout
+                    android:id="@+id/returnDateTimeForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Datum i vrijeme povratka: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/offerJourneyReturnDateButton"
+                            android:text="Datum"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/date_time_button"/>
+
+                        <Button
+                            android:id="@+id/offerJourneyReturnTimeButton"
+                            android:text="Vrijeme"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/date_time_button"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/offerJourneyReturnDateField"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textAlignment="center"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:longClickable="false"/>
+
+                        <EditText
+                            android:id="@+id/offerJourneyReturnTimeField"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textAlignment="center"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:longClickable="false"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/returnDateError"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#770000"
+                        android:textStyle="italic"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Stajališta: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/offerJourneyPassingPlacesField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zagreb\nSplit\n..." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Komentar: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/offerJourneyCommentField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="3" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

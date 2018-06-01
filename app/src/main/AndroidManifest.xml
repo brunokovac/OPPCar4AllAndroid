@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.fer.android.opp.car4all">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegisterObligatoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegisterProfilePictureActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegisterOptionalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegisterEndActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".UserHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ModeratorHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AdminHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".OfferJourneyObligatoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".OfferJourneyOptionalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".OfferJourneyEndActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

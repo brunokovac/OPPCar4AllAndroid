@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#d6f6f7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Ime i prezime:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/newUserElementFullNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="OIB:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/newUserElementOIBField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Korisničko ime:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/newUserElementUsernameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/newUserElementDeclineButton"
+            android:text="Odbij"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#f2cdcd"/>
+
+        <Button
+            android:id="@+id/newUserElementAcceptButton"
+            android:text="Potvrdi"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#c6edd7"/>
+
+    </GridLayout>
+
+</LinearLayout>

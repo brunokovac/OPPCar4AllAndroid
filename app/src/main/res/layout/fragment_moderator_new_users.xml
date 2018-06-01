@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:text="Novi korisnici"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/moderatorNewUsersErrorMessage"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Nema novih korisnika!"
+        android:textColor="#770000"
+        android:textStyle="italic"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/moderatorNewUsersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="20dp">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#c1eac8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Polazna točka:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/journeyItemStartingPoint"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Odredište:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/journeyItemDestination"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Datum i vrijeme:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/journeyItemDateTime"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Cijena:"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/journeyItemPrice"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:id="@+id/journeyItemButtons"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/journeyItemEditButton"
+            android:text="Uredi"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#f2e4b3"/>
+
+        <Button
+            android:id="@+id/journeyItemRequestsButton"
+            android:text="Zahtjevi"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#a2cbe2"/>
+
+        <Button
+            android:id="@+id/journeyItemCancelButton"
+            android:text="Otkaži"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#f2cdcd"/>
+
+        <Button
+            android:id="@+id/journeyItemLockButton"
+            android:text="Zaključaj"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="#c6edd7"/>
+
+    </GridLayout>
+
+</LinearLayout>

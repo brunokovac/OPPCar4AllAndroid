@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity"
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <ImageView
+                    android:id="@+id/moderatorCheckUserProfilePictureImage"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/moderatorCheckUserAcceptButton"
+                        android:layout_width="115dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:text="Potvrdi"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/edit_save_changes_button"/>
+
+                    <Button
+                        android:id="@+id/moderatorCheckUserDeclineButton"
+                        android:layout_width="115dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:text="Odbij"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/edit_discard_changes_button"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/moderatorCheckUserFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#000077"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Korisničko ime: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserUsernameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adresa: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserAddressField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail adresa: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserEmailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Web-stranica: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserWebpageField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserFacebookField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LinkedIn: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/moderatorCheckUserLinkedInField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

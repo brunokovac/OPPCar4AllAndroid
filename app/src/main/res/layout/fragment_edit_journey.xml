@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/editJourneyInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#000077"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vrijeme polaska: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editStartingTimeField"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textAlignment="center"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:longClickable="false"/>
+
+                    <Button
+                        android:id="@+id/editStartingTimeButton"
+                        android:text="Vrijeme"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/date_time_button"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/editTimeError"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="tekst"
+                    android:textColor="#770000"
+                    android:textStyle="italic"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Broj slobodnih mjesta: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/editJourneySpacesField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/editJourneyHighwaySwitch"
+                    android:text="Autoput:     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="19dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@android:color/tab_indicator_text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cijena [kn]: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/editJourneyPriceField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="number"/>
+
+                <Switch
+                    android:id="@+id/editJourneyRoundTripSwitch"
+                    android:text="Povratni put:     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="19dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@android:color/tab_indicator_text"/>
+
+                <LinearLayout
+                    android:id="@+id/editJourneyReturnDateTimeForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Datum i vrijeme povratka: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/editJourneyReturnDateButton"
+                            android:text="Datum"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/date_time_button"/>
+
+                        <Button
+                            android:id="@+id/editJourneyReturnTimeButton"
+                            android:text="Vrijeme"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/date_time_button"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editJourneyReturnDateField"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textAlignment="center"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:longClickable="false"/>
+
+                        <EditText
+                            android:id="@+id/editJourneyReturnTimeField"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:textAlignment="center"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:longClickable="false"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/editJourneyReturnDateError"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#770000"
+                        android:textStyle="italic"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Stajališta: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/editJourneyPassingPlacesField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zagreb\nSplit\n..." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Komentar: "
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/editJourneyCommentField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="3" />
+
+                <GridLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <Button
+                        android:id="@+id/editJourneyDiscardButton"
+                        android:text="Odustani"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:textColor="@android:color/white"
+                        android:background="#a70b18"/>
+
+                    <Button
+                        android:id="@+id/editJourneySaveButton"
+                        android:text="Spremi"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:textColor="@android:color/white"
+                        android:background="#14701f"/>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

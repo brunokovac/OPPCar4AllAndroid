@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/offerJourneyItem"
+            android:title="Ponudi prijevoz" />
+
+        <item
+            android:id="@+id/findJourneyItem"
+            android:title="Pronađi prijevoz" />
+
+        <item
+            android:id="@+id/rateLastJourneyItem"
+            android:title="Ocijeni zadnje putovanje" />
+
+        <item
+            android:id="@+id/offeredJourneysItem"
+            android:title="Ponuđena putovanja" />
+
+        <item
+            android:id="@+id/journeyRequestsItem"
+            android:title="Službeni zahtjevi za putovanjem" />
+
+        <item
+            android:id="@+id/attendedJourneysItem"
+            android:title="Popis dosadašnjih putovanja" />
+
+        <item
+            android:id="@+id/cancellationsItem"
+            android:title="Otkazivanja putovanja ili zahtjeva (0)" />
+
+        <item
+            android:id="@+id/messagesItem"
+            android:title="Pregled dobivenih poruka (0)" />
+
+
+
+    </group>
+
+</menu>

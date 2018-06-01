@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/newUsersItem"
+            android:title="Novi korisnici" />
+
+        <item
+            android:id="@+id/allUsersItem"
+            android:title="Svi korisnici" />
+
+        <item
+            android:id="@+id/reviewsItem"
+            android:title="Analiza recenzija" />
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/moderatorOfferJourneyItem"
+            android:title="Ponudi prijevoz" />
+
+        <item
+            android:id="@+id/moderatorFindJourneyItem"
+            android:title="Pronađi prijevoz" />
+
+        <item
+            android:id="@+id/moderatorRateLastJourneyItem"
+            android:title="Ocijeni zadnje putovanje" />
+
+        <item
+            android:id="@+id/moderatorOfferedJourneysItem"
+            android:title="Ponuđena putovanja" />
+
+        <item
+            android:id="@+id/moderatorJourneyRequestsItem"
+            android:title="Službeni zahtjevi za putovanjem" />
+
+        <item
+            android:id="@+id/moderatorAttendedJourneysItem"
+            android:title="Popis dosadašnjih putovanja" />
+
+        <item
+            android:id="@+id/moderatorCancellationsItem"
+            android:title="Otkazivanja putovanja ili zahtjeva (0)" />
+
+        <item
+            android:id="@+id/moderatorMessagesItem"
+            android:title="Pregled dobivenih poruka (0)" />
+
+    </group>
+
+</menu>

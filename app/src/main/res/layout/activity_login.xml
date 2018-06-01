@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/car" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Car4All"
+            android:textSize="37dp"
+            android:textStyle="bold|italic"
+            android:textColor="#000022"
+            android:layout_marginTop="-20dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:hint="Korisničko ime"
+            android:background="@drawable/login_edittext"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:hint="Lozinka"
+            android:background="@drawable/login_edittext"
+            android:maxLines="1"
+            android:lines="1" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:text="Registracija"
+                android:background="@drawable/register_button"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:text="Prijava"
+                android:background="@drawable/login_button" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loginError"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neopostojeća kombinacija\nkorisničkog imena i lozinke!"
+            android:textColor="#880000"
+            android:textSize="15dp"
+            android:visibility="invisible"
+            android:layout_gravity="right"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

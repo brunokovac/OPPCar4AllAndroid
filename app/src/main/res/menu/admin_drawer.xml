@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/adminCreatingModeratorsItem"
+            android:title="Stvaranje moderatora" />
+
+        <item
+            android:id="@+id/adminChangingTypeItem"
+            android:title="Mijenjanje ovlasti" />
+
+        <item android:title="" />
+
+        <item
+            android:id="@+id/adminNewUsersItem"
+            android:title="Novi korisnici" />
+
+        <item
+            android:id="@+id/adminAllUsersItem"
+            android:title="Svi korisnici" />
+
+        <item
+            android:id="@+id/adminReviewsItem"
+            android:title="Analiza recenzija" />
+
+    </group>
+
+</menu>

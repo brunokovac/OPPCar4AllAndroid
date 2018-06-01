@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.android.opp.car4all.LoginActivity"
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <ImageView
+                    android:id="@+id/editProfilePictureImage"
+                    android:layout_width="150dp"
+                    android:layout_height="250dp" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editSaveChanges"
+                        android:layout_width="115dp"
+                        android:layout_height="60dp"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:text="Spremi\npromjene"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/edit_save_changes_button"/>
+
+                    <Button
+                        android:id="@+id/editDiscardChanges"
+                        android:layout_width="115dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        android:text="Odbaci\npromjene"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/edit_discard_changes_button"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/editFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#000077"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editChangePictureButton"
+                android:background="@drawable/choose_picture_button"
+                android:text="Promijeni sliku"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stara lozinka: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editOldPasswordField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="textPassword" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nova lozinka: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editNewPasswordField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="textPassword" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adresa: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editAddressField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail adresa: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editEmailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Web-stranica: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editWebpageField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editFacebookField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LinkedIn: "
+                        android:textSize="18dp"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/editLinkedInField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

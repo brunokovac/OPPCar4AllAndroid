@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Polazna točka:"
+        android:textStyle="italic|bold"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/rateJourneyStartingPointField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ZAGREB"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Odredište:"
+        android:textStyle="italic|bold"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/rateJourneyDestinationField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="SPLIT"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Datum i vrijeme polaska:"
+        android:textStyle="italic|bold"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/rateJourneyStartingDateTimeField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="10.2.2018. 10:30h"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/rateJourneyPassengersList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="7dp"
+        android:layout_marginTop="25dp">
+
+    </ListView>
+
+</LinearLayout>

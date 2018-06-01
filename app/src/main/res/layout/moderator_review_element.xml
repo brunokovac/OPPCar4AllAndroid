@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/moderatorReviewElementProfilePicture"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_not_found2"/>
+
+        <TextView
+            android:id="@+id/moderatorReviewElementUserField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/moderatorReviewElementRatingBar"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5" />
+
+    <TextView
+        android:id="@+id/moderatorReviewElementCommentField"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/moderatorReviewElementReviewerField"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/moderatorReviewElementKeepButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#e2988f"
+            android:text="Zadrži"/>
+
+        <Button
+            android:id="@+id/moderatorReviewElementDeleteButton"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#ade1b1"
+            android:text="Obriši"/>
+
+    </GridLayout>
+
+</LinearLayout>
